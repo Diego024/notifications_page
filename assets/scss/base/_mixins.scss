@@ -1,0 +1,13 @@
+@use "./variables";
+
+@mixin minMobile {
+  @media (min-width: v.$mobile) {
+    @content;
+  }
+}
+
+@mixin minDesktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
